@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internetes Kommunikáció Szabályai és Protokolljai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .protocol-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .protocol-table th, .protocol-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .protocol-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Internetes Kommunikáció Szabályai és Protokolljai</h1>
+</header>
+
+<main>
+
+    <!-- OSI és TCP/IP modell ábrák -->
+    <div class="section">
+        <h2>Kommunikációs Modellek</h2>
+        <p>Az internetes kommunikáció különböző protokollokon keresztül valósul meg, amelyeket a TCP/IP és az OSI modell határoz meg. Ezek az architektúrák a hálózat rétegzett felépítését biztosítják.</p>
+
+        <div class="img-container">
+            <h3>OSI Modell</h3>
+            <img src="OSI_mod_2.png" alt="OSI modell ábra">
+        </div>
+
+        <div class="img-container">
+            <h3>TCP/IP Modell</h3>
+            <img src="Image281.gif" alt="TCP/IP modell ábra">
+        </div>
+    </div>
+
+    <!-- Protokollok táblázata -->
+    <div class="section">
+        <h2>Internetes Protokollok</h2>
+        <table class="protocol-table">
+            <thead>
+                <tr>
+                    <th>Protokoll Neve</th>
+                    <th>Protokoll Száma</th>
+                    <th>Feladata</th>
+                    <th>Réteg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTTP</td>
+                    <td>1.1 / 2 / 3</td>
+                    <td>Weboldalak betöltése és az erőforrások letöltése</td>
+                    <td>Alkalmazási réteg</td>
+                </tr>
+                <tr>
+                    <td>HTTPS</td>
+                    <td>-</td>
+                    <td>Biztonságos webes kommunikáció</td>
+                    <td>Alkalmazási réteg</td>
+                </tr>
+                <tr>
+                    <td>FTP</td>
+                    <td>-</td>
+                    <td>Fájlok átvitele</td>
+                    <td>Alkalmazási réteg</td>
+                </tr>
+                <tr>
+                    <td>SMTP</td>
+                    <td>-</td>
+                    <td>Email küldése</td>
+                    <td>Alkalmazási réteg</td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>IPv4 / IPv6</td>
+                    <td>Csomagok irányítása hálózatok között</td>
+                    <td>Hálózati réteg</td>
+                </tr>
+                <tr>
+                    <td>TCP</td>
+                    <td>-</td>
+                    <td>Megbízható adatátvitel</td>
+                    <td>Szállítási réteg</td>
+                </tr>
+                <tr>
+                    <td>UDP</td>
+                    <td>-</td>
+                    <td>Gyors, nem megbízható adatátvitel</td>
+                    <td>Szállítási réteg</td>
+                </tr>
+                <tr>
+                    <td>DNS</td>
+                    <td>-</td>
+                    <td>Domain nevek IP-címekké alakítása</td>
+                    <td>Alkalmazási réteg</td>
+                </tr>
+                <tr>
+                    <td>RIP</td>
+                    <td>RFC 1058</td>
+                    <td>Routing információs protokoll hálózati útvonalakhoz</td>
+                    <td>Hálózati réteg</td>
+                </tr>
+                <tr>
+                    <td>IEEE 802.11n</td>
+                    <td>Wi-Fi szabvány</td>
+                    <td>Vezeték nélküli kommunikáció</td>
+                    <td>Fizikai és Adatkapcsolati réteg</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Internetes Kommunikáció Oktatás</p>
+</footer>
+
+</body>
+</html>
